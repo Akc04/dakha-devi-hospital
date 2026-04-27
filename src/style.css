@@ -1150,13 +1150,12 @@ section {
     padding: 4rem 0 2rem; /* Even tighter hero on mobile */
   }
 
-
-  
-  .video-card {
-    max-width: 400px;
-    margin: 0 auto;
+  /* Fix heading cut-off on mobile */
+  section {
+    padding: 2.5rem 0 1rem; /* More top padding to prevent cut-off */
+    scroll-margin-top: 90px; /* Specific scroll offset for mobile header */
   }
-
+  
   .mobile-only-toggle {
     display: flex !important;
   }
