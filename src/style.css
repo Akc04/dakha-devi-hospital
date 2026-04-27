@@ -181,6 +181,10 @@ a {
   transition: all 0.3s ease;
 }
 
+.mobile-menu-btn {
+  display: none;
+}
+
 .navbar.scrolled {
   padding: 0.75rem 0;
 }
@@ -1049,7 +1053,7 @@ section {
 /* Responsive */
 @media (max-width: 1024px) {
   .hero h1 { font-size: 3rem; }
-  .doctors-grid, .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .doctors-grid, .services-grid, .video-grid { grid-template-columns: repeat(2, 1fr); }
   .appointment-grid { grid-template-columns: 1fr; }
 }
 
@@ -1125,6 +1129,11 @@ section {
 
   .about-grid, .facilities-grid, .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
   .testimoials-grid { grid-template-columns: 1fr; }
-  .services-grid, .doctors-grid { grid-template-columns: 1fr; }
+  .services-grid, .doctors-grid, .video-grid { grid-template-columns: 1fr; }
   .form-group-row { grid-template-columns: 1fr; }
+  
+  .video-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
