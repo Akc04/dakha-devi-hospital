@@ -19,7 +19,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Offset for fixed header */
+  scroll-padding-top: 75px; /* Reduced offset for better alignment */
 }
 
 body {
@@ -175,7 +175,7 @@ a {
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Reduced padding */
   z-index: 1000;
   background: var(--white);
   box-shadow: var(--shadow-sm);
@@ -247,10 +247,10 @@ a {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 85vh;
+  min-height: 80vh; /* Slightly reduced height */
   display: flex;
   align-items: center;
-  padding: 4rem 0;
+  padding: 2rem 0; /* Reduced padding */
   overflow: hidden;
   background-color: var(--primary);
 }
@@ -333,7 +333,7 @@ a {
 
 /* Sections Common */
 section {
-  padding: 6rem 0;
+  padding: 4rem 0; /* Reduced from 6rem to tighten gaps */
 }
 
 .section-header {
@@ -1141,10 +1141,15 @@ section {
     justify-content: center;
   }
 
-  .about-grid, .facilities-grid, .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .about-grid, .facilities-grid, .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .testimoials-grid { grid-template-columns: 1fr; }
   .services-grid, .doctors-grid, .video-grid { grid-template-columns: 1fr; }
   .form-group-row { grid-template-columns: 1fr; }
+  
+  .hero { 
+    padding: 6rem 0 3rem; /* Tighter hero on mobile */
+  }
+
   
   .video-card {
     max-width: 400px;
