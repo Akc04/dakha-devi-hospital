@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment | Dakha Devi Memorial Hospital</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Top Bar for Emergency & Contact -->
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <div class="top-bar-left">
+          <span data-en="Loharon Ka Mohalla, Keshav Nagar, Chomu, Jaipur" data-hi="लोहारों का मोहल्ला, केशव नगर, चोमू, जयपुर"><i class="fa-solid fa-location-dot"></i> Loharon Ka Mohalla, Keshav Nagar, Chomu, Jaipur</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:+918619953397" class="emergency-link"><i class="fa-solid fa-phone-volume"></i> <span data-en="Emergency: 8619953397" data-hi="आपातकालीन: 8619953397">Emergency: 8619953397</span></a>
+          <div class="language-toggle">
+            <span class="lang-btn active" data-lang="en">EN</span> | <span class="lang-btn" data-lang="hi">HI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container container">
+        <div class="logo">
+          <i class="fa-solid fa-house-medical"></i>
+          <div class="logo-text">
+            <span class="brand-title" data-en="Dakha Devi Memorial Hospital" data-hi="दाखा देवी मेमोरियल अस्पताल">Dakha Devi Memorial Hospital</span>
+            <span class="brand-subtitle" data-en="Institute of Cardio-Respiratory Disease" data-hi="हृदय एवं श्वसन रोग संस्थान">Institute of Cardio-Respiratory Disease</span>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="index.html#home" data-en="Home" data-hi="होम">Home</a>
+          <a href="index.html#services" data-en="Services" data-hi="सेवाएं">Services</a>
+          <a href="index.html#doctors" data-en="Doctors" data-hi="डॉक्टर">Doctors</a>
+        </div>
+        <a href="appointment.html" class="btn btn-primary nav-btn" data-en="Book Appointment" data-hi="अपॉइंटमेंट बुक करें">Book Appointment</a>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <h1 data-en="Book an Appointment" data-hi="अपॉइंटमेंट बुक करें">Book an Appointment</h1>
+        <p data-en="Schedule your visit with our expert specialists quickly and easily." data-hi="हमारे विशेषज्ञ विशेषज्ञों के साथ अपनी मुलाकात जल्दी और आसानी से निर्धारित करें।">Schedule your visit with our expert specialists quickly and easily.</p>
+      </div>
+    </div>
+
+    <section class="appointment-section">
+      <div class="container appointment-grid">
+        
+        <div class="booking-form-card">
+          <h3 data-en="Request an Appointment" data-hi="अपॉइंटमेंट के लिए अनुरोध करें">Request an Appointment</h3>
+          <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="name" data-en="Patient Name" data-hi="रोगी का नाम">Patient Name</label>
+              <input type="text" id="name" placeholder="Enter full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" data-en="Phone Number" data-hi="फ़ोन नंबर">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="doctor" data-en="Select Doctor / Specialty" data-hi="डॉक्टर / विशेषता चुनें">Select Doctor / Specialty</label>
+              <select id="doctor" required>
+                <option value="" disabled selected data-en="Choose a specialist..." data-hi="एक विशेषज्ञ चुनें...">Choose a specialist...</option>
+                <option value="vikas">Dr. Vikas Yadav (Chest & Respiratory)</option>
+                <option value="arun">Dr. Arun Kumar Yadav (Cardiology)</option>
+                <option value="jyoti">Dr. Jyoti Yadav (Gynecology & Maternity)</option>
+                <option value="neetu">Dr. Neetu Yadav (Dental Care)</option>
+                <option value="general" data-en="General Inquiry" data-hi="सामान्य पूछताछ">General Inquiry</option>
+              </select>
+            </div>
+            
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="date" data-en="Preferred Date" data-hi="पसंदीदा तारीख">Preferred Date</label>
+                <input type="date" id="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time" data-en="Preferred Time" data-hi="पसंदीदा समय">Preferred Time</label>
+                <select id="time" required>
+                  <option value="morning" data-en="Morning (9 AM - 1 PM)" data-hi="सुबह (9 AM - 1 PM)">Morning (9 AM - 1 PM)</option>
+                  <option value="evening" data-en="Evening (5 PM - 8 PM)" data-hi="शाम (5 PM - 8 PM)">Evening (5 PM - 8 PM)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" data-en="Message / Symptoms (Optional)" data-hi="संदेश / लक्षण (वैकल्पिक)">Message / Symptoms (Optional)</label>
+              <textarea id="message" rows="3" placeholder="Briefly describe your concern..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full"><span data-en="Submit Request" data-hi="अनुरोध सबमिट करें">Submit Request</span></button>
+          </form>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 data-en="Direct Booking & Contact" data-hi="सीधी बुकिंग और संपर्क">Direct Booking & Contact</h3>
+          <p data-en="For immediate assistance or emergencies, please call us directly or use WhatsApp." data-hi="तत्काल सहायता या आपात स्थिति के लिए, कृपया हमें सीधे कॉल करें या व्हाट्सएप का उपयोग करें।">For immediate assistance or emergencies, please call us directly or use WhatsApp.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="method-details">
+                <h4 data-en="WhatsApp Us" data-hi="हमें व्हाट्सएप करें">WhatsApp Us</h4>
+                <p data-en="Quick responses for booking." data-hi="बुकिंग के लिए त्वरित प्रतिक्रिया।">Quick responses for booking.</p>
+                <a href="https://wa.me/918619953397" target="_blank" rel="noopener noreferrer" class="text-link"><span data-en="Chat Now" data-hi="अभी चैट करें">Chat Now</span> <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-phones">
+            <h4 data-en="Doctor Direct Lines" data-hi="डॉक्टर सीधी लाइनें">Doctor Direct Lines</h4>
+            <ul>
+              <li><strong><span data-en="Dr. Vikas Yadav:" data-hi="डॉ. विकास यादव:">Dr. Vikas Yadav:</span></strong> <a href="tel:+918619953397">8619953397</a>, <a href="tel:+918764682272">8764682272</a></li>
+              <li><strong><span data-en="Dr. Arun Kumar Yadav:" data-hi="डॉ. अरुण कुमार यादव:">Dr. Arun Kumar Yadav:</span></strong> <a href="tel:+918952830260">8952830260</a></li>
+              <li><strong><span data-en="Dr. Jyoti Yadav:" data-hi="डॉ. ज्योति यादव:">Dr. Jyoti Yadav:</span></strong> <a href="tel:+917597726123">7597726123</a></li>
+              <li><strong><span data-en="Dr. Neetu Yadav:" data-hi="डॉ. नीतू यादव:">Dr. Neetu Yadav:</span></strong> <a href="tel:+918561009849">8561009849</a></li>
+            </ul>
+          </div>
+
+          <div class="map-container">
+            <h4 data-en="Hospital Location" data-hi="अस्पताल का स्थान">Hospital Location</h4>
+            <p><i class="fa-solid fa-location-dot"></i> <span data-en="Dakha Devi Memorial Hospital & Institute of Cardio-Respiratory Diseases, Loharon Ka Mohalla, Keshav Nagar, Chomu, Jaipur – 303702" data-hi="दाखा देवी मेमोरियल अस्पताल और हृदय-श्वसन रोग संस्थान, लोहारों का मोहल्ला, केशव नगर, चोमू, जयपुर – 303702">Dakha Devi Memorial Hospital & Institute of Cardio-Respiratory Diseases, Loharon Ka Mohalla, Keshav Nagar, Chomu, Jaipur – 303702</span></p>
+            <div class="map-frame">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.04752203306!2d75.7274!3d27.1649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDA5JzUzLjYiTiA3NcKwNDMnMzguNiJF!5e0!3m2!1sen!2sin!4v1714200000000!5m2!1sen!2sin" width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://share.google/qq9CBeBEH2dISe6AD" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">
+                <i class="fa-solid fa-directions"></i> <span data-en="Get Directions" data-hi="दिशा-निर्देश प्राप्त करें">Get Directions</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bottom container" style="border-top: none; padding-top: 1rem;">
+        <p><span data-en="&copy; 2026 Dakha Devi Memorial Hospital. All rights reserved." data-hi="&copy; 2026 दाखा देवी मेमोरियल अस्पताल। सर्वाधिकार सुरक्षित।">&copy; 2026 Dakha Devi Memorial Hospital. All rights reserved.</span></p>
+        <a href="index.html" style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 10px; display: inline-block;">&larr; <span data-en="Back to Home" data-hi="होम पर वापस जाएं">Back to Home</span></a>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918619953397" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="WhatsApp Us">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Auto-select doctor based on URL parameter
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const docParam = urlParams.get('doc');
+        if (docParam) {
+          const select = document.getElementById('doctor');
+          if (select) {
+            select.value = docParam;
+          }
+        }
+
+        // Form submission demo
+        const form = document.getElementById('bookingForm');
+        if (form) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! Your appointment request has been submitted. Our team will contact you shortly to confirm the exact time.');
+            form.reset();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
