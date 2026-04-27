@@ -19,6 +19,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Offset for fixed header */
 }
 
 body {
@@ -1087,6 +1088,19 @@ section {
     z-index: 999;
   }
 
+  /* Show language toggle in navbar on mobile */
+  .navbar .language-toggle {
+    display: flex;
+    margin-right: 1rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+  
+  .navbar .language-toggle .lang-btn {
+    padding: 0 8px;
+  }
+
+
   .hero { 
     padding: 8rem 0 4rem; 
     min-height: auto; 
@@ -1135,5 +1149,9 @@ section {
   .video-card {
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  .mobile-only-toggle {
+    display: flex !important;
   }
 }
