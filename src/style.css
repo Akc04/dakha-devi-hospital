@@ -1150,10 +1150,10 @@ section {
     padding: 4rem 0 2rem; /* Even tighter hero on mobile */
   }
 
-  /* Fix heading cut-off on mobile */
+  /* Tighten sections for mobile - no gaps, no cut-offs */
   section {
-    padding: 2.5rem 0 1rem; /* More top padding to prevent cut-off */
-    scroll-margin-top: 90px; /* Specific scroll offset for mobile header */
+    padding: 0.5rem 0 1rem; /* Very tight top padding */
+    scroll-margin-top: 0; /* Remove redundant margin */
   }
   
   .mobile-only-toggle {
