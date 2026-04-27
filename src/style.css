@@ -985,6 +985,46 @@ section {
   background-color: #20BA56;
 }
 
+.call-float {
+  position: fixed;
+  bottom: 100px; /* Above WhatsApp */
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-light);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+  background-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .call-float {
+    bottom: 90px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .whatsapp-float {
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
