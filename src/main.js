@@ -11,6 +11,30 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+
+if (mobileMenuBtn && navLinks) {
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-active');
+    const icon = mobileMenuBtn.querySelector('i');
+    if (navLinks.classList.contains('mobile-active')) {
+      icon.classList.replace('fa-bars', 'fa-times');
+    } else {
+      icon.classList.replace('fa-times', 'fa-bars');
+    }
+  });
+
+  // Close menu when clicking a link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('mobile-active');
+      mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+    });
+  });
+}
+
 // Initial trigger for scroll effect
 if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
